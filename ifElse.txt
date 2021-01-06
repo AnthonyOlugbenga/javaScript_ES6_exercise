@@ -1,0 +1,45 @@
+ Homework Assignment #3: Statements and Operators
+// Creating a logical argument.
+
+
+let allMen = "mortal";
+let socratesPartOfMen = true;
+if (allMen ==="mortal" && socratesPartOfMen){
+ console.log("Socrates is part collection men, so he is mortal."); 
+}
+
+else if(allMen !=="mortal" && socratesPartOfMen === false); {
+  console.log("Socrates is immortal")
+}
+
+else if(allMen !=="mortal" || socratesPartOfMen ); {
+  console.log("Socrates is immortal")
+}
+else (allMen !=="mortal" || socratesPartOfMen === true); {
+  console.log("Socrates is immortal")
+}
+
+
+// Extra Credit:
+
+let isVanilla = true;
+let isChocolate = true;
+
+if (cakeIsVanilla !== true && cakeIsChocolate !== true);
+{ console.log("Cake is either vanilla or chocolate.")
+} 
+else if(cakeIsVanilla && cakeIsChocolate); 
+{
+  console.log("Cake contains both vanilla and chocolate");
+}
+
+else if(cakeIsVanilla !== true || cakeIsChocolate); {
+  console.log("Cake is chocolate");
+}
+
+else if(cakeIsVanilla || cakeIsChocolate !== true ) {
+  console.log("Cake not cholate but is vanilla");
+}
+else; {
+  console.log("Check the list");
+}

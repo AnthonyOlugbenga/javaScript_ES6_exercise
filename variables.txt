@@ -1,0 +1,95 @@
+// Homework Assignment #2: Variables and Constants
+
+// what is hoisting?
+
+/*
+Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. Inevitably, this means that no matter where functions and variables are declared, 
+they are moved to the top of their scope regardless of whether their scope is global or local
+*/
+
+
+// What are the differences between let, const and var?
+
+/* 
+var can be reasigned and change type, it is a container for values. 
+var declarations are globally scoped or function scoped.
+A scope is always created when curly brackets are encountered. 
+If we create a function, for example, a new scope is created:
+The var keyword, which defines a variable globally, or locally to an entire function regardless of block scope.
+*/
+
+// local var
+function sayName(){
+	var myName = "Anthony";
+	console.log("My name is" +"" + myName)
+}
+sayName()
+sayName()
+
+
+// global var
+var myName = "Anthony";
+
+function sayName(){
+	
+	console.log("My name is" +"" + myName)
+}
+sayName()
+console.log("My name is" +"" + myName)
+
+
+//  let can be only available inside the scope it's declared,
+
+function sayName(){
+	let myName = "Anthony";
+	console.log("My name is" +"" + myName)
+}
+sayName()
+console.log("My name is" +"" + myName)
+
+
+
+// comparing var and let
+if (true) {
+  var myName = "Anthony";
+  let myMusic = "Afro hip hop";
+
+  console.log(myName); // " Anthony";
+  console.log(myMusic); // "Afro hip hop";
+  
+}
+
+console.log(myName); // "Anthony";
+console.log(myMusic); // ReferenceError: myMusic is not defined
+
+
+
+/* 
+Constants are block-scoped, much like variables defined using the let statement. 
+The value of a constant can't be changed through reassignment, and it can't be redeclared.
+
+*/
+
+function sayName(){
+	const myName = "Anthony";
+	console.log("My name is" +"" + myName)
+}
+sayName()
+console.log("My name is" +"" + myName)
+
+
+// comparing var, let and const
+
+if (true) {
+  var myName = "Anthony";
+  let myMusic = "Afro hip hop";
+  const MyFood = "Fried Rice with beef";
+
+  console.log(myName); // " Anthony";
+  console.log(myMusic); // "Afro hip hop";
+  console.log(myFood); // "Fried Rice with beef";
+}
+
+console.log(myName); // "Anthony";
+console.log(myMusic); // ReferenceError: myMusic is not defined
+console.log(myFood); // ReferenceError: food is not defined

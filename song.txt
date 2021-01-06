@@ -1,0 +1,49 @@
+// Homework Assignment #1:
+
+// Attributes that describes my favourite song.
+
+/* 
+Damini Ebunoluwa Ogulu (born 2 July 1991), 
+known professionally as Burna Boy, is a Nigerian singer and songwriter. 
+He rose to prominence in 2012
+
+*/
+
+var artist = "Burna boy";
+var fullName = "Damini Ebunoluwa";
+var genre = "Afri hip hop";
+var title = "Gbona";
+var durationInSeconds = 4.95;
+var viewers = 33000000;
+var yearReleased = "sept. 27, 2018";
+var occupation = "Singer, Songwriter";
+var height = "1.85m";
+var awards = "Best international Act";
+var age = "28years";
+var labels = "Spaceship bad habit";
+var website = "onaspaceship.com";
+var instrument = "Vocals";
+var bestSongEver = true;
+var listOfAwardSongs = ["Like 2Party", "Killin' Dem", "himself"]
+var awardAndYear = {"Grammy": 2020, "Soundcity": 2015, "Headies": 2013,}
+
+
+// Printing out each of the listed variables
+
+console.log (artist);
+console.log (fullName);
+console.log (genre);
+console.log (title);
+console.log (durationInSeconds);
+console.log (viewers);
+console.log (yearReleased);
+console.log (occupation);
+console.log (height);
+console.log (awards);
+console.log (age);
+console.log (labels);
+console.log (website);
+console.log (instrument);
+console.log (bestSongEver);
+console.log (listOfAwardSongs);
+console.log (awardAndYear);
